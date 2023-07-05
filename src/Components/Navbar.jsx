@@ -37,13 +37,13 @@ function Navbar() {
             <button className="flex text-xl py-2 px-12 rounded text-white bg-[#fb6d3a]">
                 New Upload
             </button>
-            <div className="hidden lg:flex text-2xl bg-gray-200 px-2 py-2 rounded-lg">
+            <div className="hidden lg:flex text-2xl bg-gray-200 hover:bg-gray-400 px-2 py-2 rounded-lg">
                 <AiOutlineBell/>
             </div>
-            <div className="hidden lg:flex text-2xl bg-gray-200 px-2 py-2 rounded-lg">
+            <div className="hidden lg:flex text-2xl bg-gray-200 hover:bg-gray-400 px-2 py-2 rounded-lg">
                 <AiOutlineMessage/>
             </div>
-            <div className="hidden lg:flex text-2xl bg-gray-200 px-2 py-2 rounded-lg">
+            <div className="hidden lg:flex text-2xl bg-gray-200 hover:bg-gray-400 px-2 py-2 rounded-lg">
                 <BsGraphUpArrow/>
             </div>
         </div>
