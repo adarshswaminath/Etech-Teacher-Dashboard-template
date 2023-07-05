@@ -20,7 +20,7 @@ const Counrty = ({ counrty }) => {
 
 function Hero() {
   return (
-    <div className="p-2 md:p-4 lg:p-6 xl:p-8">
+    <div>
       <div className="grid lg:flex md:flex gap-4 mt-[-4px]">
         {/* first box */}
         <div className="w-full lg:w-3/4 h-96 p-4 bg-white rounded-lg">
