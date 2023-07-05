@@ -5,16 +5,18 @@ import {BiHomeAlt,BiMessage} from "react-icons/bi"
 import {SlCalender} from "react-icons/sl"
 import {AiOutlinePlayCircle} from "react-icons/ai"
 import {BsGraphUpArrow} from "react-icons/bs"
+import Dashboard from "./Components/Dashboard/Dashboard";
 
 function App() {
   return (
-    <div>
+    <div className="bg-gray-200">
       {/* drawer starts */}
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
           {/* page components */}
           <Navbar/>
+          <Dashboard />
           {/* close of components */}
         </div>
         <div className="drawer-side">
