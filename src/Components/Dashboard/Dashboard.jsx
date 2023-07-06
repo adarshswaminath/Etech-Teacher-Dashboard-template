@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import Cards from './Cards'
 import Box from './Box'
+import Table from './Table'
 
 function Dashboard() {
   return (
@@ -9,6 +10,7 @@ function Dashboard() {
         <Hero/>
         <Cards/>
         <Box/>
+        <Table/>
     </div>
   )
 }

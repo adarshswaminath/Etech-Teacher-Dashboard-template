@@ -107,13 +107,12 @@ function Box() {
             {/* first row */}
             <Query title="Machine Learning" color="blue" caption="Bootcamp"/>
             {/* second row */}
-            <Query title="Python DataScience" color="green" caption="Data Science"/>
+            <Query title="R in DataScience" color="green" caption="Data Science"/>
             {/* third row */}
             <Query title="SuperDataScience" color="green" caption="Data Science" />
             {/* Fourth row */}
             <Query title="Analyst Bootcamp" color="green" caption="Data Science"/>
-            {/* fifth */}
-            <Query title="R in DataScience" color="green" caption="Data Science"/>
+
         </div>
       </div>
     </div>

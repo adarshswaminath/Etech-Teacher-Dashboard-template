@@ -46,6 +46,7 @@ function Hero() {
                 </div>
             </div>
             {/* box body */}
+            {/* graph for the website */}
             {/* <Graph/> */}
         </div>
         
