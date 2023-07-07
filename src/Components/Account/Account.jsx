@@ -1,5 +1,6 @@
 import React from 'react'
 import {BsBell} from "react-icons/bs"
+import Profile from './Profile'
 
 function Account() {
   return (
@@ -17,7 +18,7 @@ function Account() {
         <div className='w-full lg:w-3/5 bg-white p-3'>
           <h3 className='text-xl text-violet-600 font-semibold'>Generals</h3>
         </div>
-        <div className='w-full lg:w-2/5 bg-gray-100 rounded-lg p-2 h-96'>
+        <div className='w-full lg:w-2/5 bg-gray-100 rounded-lg p-2'>
           {/* top button section */}
           <div className="flex justify-between items-center">
             <div>
@@ -38,6 +39,9 @@ function Account() {
                    className='w-14 h-14 shadow-lg rounded' />
             </div>
           </div>
+          {/* top section created */}
+          {/* user profile section */}
+          <Profile/>
         </div>
       </div>
     </div>
