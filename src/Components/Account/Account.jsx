@@ -2,6 +2,8 @@ import React from 'react'
 import {BsBell} from "react-icons/bs"
 import Profile from './Profile'
 import Performance from './Performance'
+import Form from './Form'
+import ImageUpload from './ImageUpload'
 
 function Account() {
   return (
@@ -16,8 +18,18 @@ function Account() {
         </div>
       </div>
       <div className="grid lg:flex gap-4">
-        <div className='w-full lg:w-3/5 bg-white p-3'>
+        <div className='w-full lg:w-3/5 bg-white p-3 '>
           <h3 className='text-xl text-violet-600 font-semibold'>Generals</h3>
+          <hr />
+          {/* first box content */}
+          <div className="grid lg:flex items-center gap-4">
+            <div className='w-full lg:w-4/5'>
+              <Form/>
+            </div>
+            <div className='w-full lg:w-1/5'>
+                <ImageUpload/>
+            </div>
+          </div>
         </div>
         <div className='w-full lg:w-2/5 bg-gray-100 rounded-lg p-2'>
           {/* top button section */}
