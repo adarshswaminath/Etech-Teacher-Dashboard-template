@@ -1,6 +1,7 @@
 import React from 'react'
 import {BsBell} from "react-icons/bs"
 import Profile from './Profile'
+import Performance from './Performance'
 
 function Account() {
   return (
@@ -22,7 +23,7 @@ function Account() {
           {/* top button section */}
           <div className="flex justify-between items-center">
             <div>
-              <button className="flex text-xl py-2 px-12 rounded text-white bg-[#fb6d3a] hover:bg-[#ec7e3c]">
+              <button className="flex text-xl py-2 px-6 lg:px-6 rounded text-white bg-[#fb6d3a] hover:bg-[#ec7e3c]">
                   New Upload
               </button>
             </div>
@@ -41,7 +42,9 @@ function Account() {
           </div>
           {/* top section created */}
           {/* user profile section */}
+
           <Profile/>
+          <Performance/>
         </div>
       </div>
     </div>
