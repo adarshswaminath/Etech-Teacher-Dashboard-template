@@ -25,7 +25,7 @@ function App() {
           <Navbar/>
            {/* adding router */}
       <Routes>
-        <Route exact path="/" element={<Dashboard/>}></Route>
+        <Route exact path="/dashboard" element={<Dashboard/>}></Route>
         <Route exact path="/schedule" element={<Schedule/>}></Route>
         <Route exact path="/message" element={<Message/>}></Route>
         <Route exact path="/course" element={<Course/>}></Route>
@@ -39,7 +39,7 @@ function App() {
             {/* Sidebar content here */}
             <li>
             <h1 className="text-3xl font-semibold text-violet-600">E-Tech</h1>
-              <Link to="/" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+              <Link to="/dashboard" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                 <BiHomeAlt/>
                 Dashboard
               </Link>
