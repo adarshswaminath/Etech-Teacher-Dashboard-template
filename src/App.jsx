@@ -7,16 +7,30 @@ import {AiOutlinePlayCircle} from "react-icons/ai"
 import {BsGraphUpArrow} from "react-icons/bs"
 import Dashboard from "./Components/Dashboard/Dashboard";
 
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+import Schedule from "./Components/Schedule/Schedule";
+import Message from "./Components/Message/Message";
+import Course from "./Components/Course/Course";
+import Account from "./Components/Account/Account";
+
 function App() {
   return (
-    <div className="bg-gray-200">
+   <Router>
+           <div className="bg-gray-200">
       {/* drawer starts */}
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
           {/* page components */}
           <Navbar/>
-          <Dashboard />
+           {/* adding router */}
+      <Routes>
+        <Route exact path="/" element={<Dashboard/>}></Route>
+        <Route exact path="/schedule" element={<Schedule/>}></Route>
+        <Route exact path="/message" element={<Message/>}></Route>
+        <Route exact path="/course" element={<Course/>}></Route>
+        <Route exact path="/account" element={<Account/>}></Route>
+      </Routes>
           {/* close of components */}
         </div>
         <div className="drawer-side">
@@ -25,40 +39,43 @@ function App() {
             {/* Sidebar content here */}
             <li>
             <h1 className="text-3xl font-semibold text-violet-600">E-Tech</h1>
-              <a className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+              <Link to="/" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                 <BiHomeAlt/>
                 Dashboard
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+              <Link to="/schedule"  className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                 <SlCalender/>
                 My Schedule
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+              <Link to="/message" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                 <BiMessage/>
                 Message
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+              <Link to="/course" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                 <AiOutlinePlayCircle/>
                 My Course
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+              <Link to="/account" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                 <BsGraphUpArrow/>
                 My Account
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
+
+     
       {/* drawer close */}
     </div>
+   </Router>
   );
 }
 
