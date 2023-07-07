@@ -2,6 +2,7 @@ import React from "react";
 import {AiOutlineBell,AiOutlineMessage} from "react-icons/ai"
 import {BsGraphUpArrow} from "react-icons/bs"
 import {BiUpload} from 'react-icons/bi'
+import Search from "./Search";
 function Navbar() {
   return (
     <div className="bg-violet-600 p-2">
@@ -30,7 +31,7 @@ function Navbar() {
         {/* label close */}
         
         <div className="hidden lg:flex">
-            <input type="text" className="bg-gray-200 px-12 py-3 rounded-lg" placeholder="Search..."/>
+            <Search bgcolor="gray-100"/>
         </div>
 
         <div className="hidden lg:flex gap-3">
