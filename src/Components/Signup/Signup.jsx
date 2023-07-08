@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Form from "./Form";
-import image from "../Images/signup.svg"
-function Signin() {
+import image from "../Images/bg.svg"
+function Signup() {
   return (
     <div>
       <div className="grid lg:flex bg-violet-500">
@@ -10,7 +10,7 @@ function Signin() {
             {/* top header */}
             <div className="flex justify-between">
                 <div className="logo text-3xl font-semibold text-violet-500">E-tech</div>
-                <Link to="/signup" className="btn bg-whiteborder border-gray-600">Sign Up</Link>
+                <Link to="/" className="btn bg-whiteborder border-gray-600">Sign In</Link>
             </div>
             <div className="p-2 md:p-4 lg:p-8">
             <Form/>
@@ -31,4 +31,4 @@ function Signin() {
   );
 }
 
-export default Signin;
+export default Signup;

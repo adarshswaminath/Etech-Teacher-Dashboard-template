@@ -22,7 +22,9 @@ function Form() {
       <p className='text-gray-400'>
         Voluptate enim nulla laborum mollit culpa velit sunt consequat. Exercitation duis sunt excepteur officia veniam ex ea fugiat esse cillum.
       </p>
-      {message}
+      <div className='mt-2 mb-2 font-bold '>
+        {message}
+      </div>
 
       <form className="grid  mt-3 gap-4">
         <input type="text" onChange={(e) => setUsername(e.target.value)} placeholder='First Name' className='border rounded-lg border-gray-400 p-2' name="" id="" required/>
@@ -34,7 +36,7 @@ function Form() {
           <input type="checkbox" className='checkbox' />
           <p className='text-gray-400 font-semibold'>Remember Me</p>
         </div>
-        <div className='text-gray-400 hover:text-violet-500 font-semibold'>
+        <div className='text-gray-400 cursor-pointer hover:text-violet-500 font-semibold'>
           Forgot Password?
         </div>
       </div>

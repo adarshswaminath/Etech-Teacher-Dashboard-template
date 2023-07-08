@@ -11,12 +11,14 @@ import Message from "./Components/Message/Message";
 import Course from "./Components/Course/Course";
 import Account from "./Components/Account/Account";
 import Signin from "./Components/Signin/Signin";
+import Signup from "./Components/Signup/Signup"
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Signin />} />
+        <Route path="/signup" element={<Signup/>}/>
         <Route path="/panel" element={<Panel />} />
       </Routes>
     </Router>
