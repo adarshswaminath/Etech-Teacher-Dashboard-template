@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Form from "./Form";
 import image from "../Images/forgot.svg"
+
+
 function Forgot() {
   return (
     <div>

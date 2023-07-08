@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import swal from "sweetalert";
+
+
+
 
 function Form() {
-  const Template = ({ purpose,placeholder }) => {
+  const Template = ({ purpose,placeholder ,condition}) => {
     return (
       <motion.div
         initial={{ opacity: 0, x: -100 }}
@@ -21,12 +25,21 @@ function Form() {
               required
             />
           </form>
-          <button
-          onClick={changeStat}
-            className="bg-violet-500 mt-3 text-white w-full p-3 rounded-lg hover:bg-violet-400 font-semibold focus:outline-none"
-          >
-            {purpose}
-          </button>
+          {condition ? (
+            <button
+            onClick={changeStat}
+              className="bg-violet-500 mt-3 text-white w-full p-3 rounded-lg hover:bg-violet-400 font-semibold focus:outline-none"
+            >
+              {purpose}
+            </button>
+          ) : (
+            <button
+            onClick={Alert}
+              className="bg-violet-500 mt-3 text-white w-full p-3 rounded-lg hover:bg-violet-400 font-semibold focus:outline-none"
+            >
+              {purpose}
+            </button>
+          )}
         </div>
       </motion.div>
     );
@@ -38,6 +51,13 @@ function Form() {
     setUsername(!username);
   };
 
+  const Alert = () => {
+    swal("Success", "Password Successfully Changed!", "success")
+    setTimeout(() => {
+      window.location = '/'
+    },3000)
+  }
+
   return (
     <div className="flex flex-col">
       <h3 className="font-semibold text-violet-500 text-2xl">Forgot Password</h3>
@@ -46,9 +66,9 @@ function Form() {
       </p>
 
       {username ? (
-        <Template purpose="Submit Username" placeholder="Username" />
+        <Template purpose="Submit Username" placeholder="Username" condition={true} />
       ) : (
-        <Template purpose="Submit Password" placeholder="Password"/>
+        <Template purpose="Submit Password" placeholder="Password" condition={false}/>
       )}
     </div>
   );
