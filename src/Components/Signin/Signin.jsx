@@ -10,7 +10,7 @@ function Signin() {
             {/* top header */}
             <div className="flex justify-between">
                 <div className="logo text-3xl font-semibold text-violet-500">E-tech</div>
-                <Link to="/signup" className="btn bg-whiteborder border-gray-600">Sign Up</Link>
+                <Link to="/signup" className="btn bg-white border border-gray-600">Sign Up</Link>
             </div>
             <div className="p-2 md:p-4 lg:p-8">
             <Form/>

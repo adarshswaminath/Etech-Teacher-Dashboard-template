@@ -12,6 +12,7 @@ import Course from "./Components/Course/Course";
 import Account from "./Components/Account/Account";
 import Signin from "./Components/Signin/Signin";
 import Signup from "./Components/Signup/Signup"
+import Forgot from "./Components/Forgot/Forgot";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Signin />} />
         <Route path="/signup" element={<Signup/>}/>
+        <Route path="/forgot-password" element={<Forgot/>}></Route>
         <Route path="/panel" element={<Panel />} />
       </Routes>
     </Router>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Form() {
 
@@ -36,9 +37,9 @@ function Form() {
           <input type="checkbox" className='checkbox' />
           <p className='text-gray-400 font-semibold'>Remember Me</p>
         </div>
-        <div className='text-gray-400 cursor-pointer hover:text-violet-500 font-semibold'>
+        <Link to="/forgot-password" className='text-gray-400 cursor-pointer hover:text-violet-500 font-semibold'>
           Forgot Password?
-        </div>
+        </Link>
       </div>
 
       <div onClick={Auth} className='bg-violet-500 mt-3 text-white py-3 rounded-lg hover:bg-violet-400 font-semibold'>

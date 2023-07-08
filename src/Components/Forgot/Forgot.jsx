@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Form from "./Form";
-import image from "../Images/bg.svg"
-function Signup() {
+import image from "../Images/forgot.svg"
+function Forgot() {
   return (
     <div>
       <div className="grid lg:flex bg-violet-500">
         <div className="w-full text-center h-screen lg:w-1/2 bg-white p-3 border rounded-br-sm  rounded-tr-sm  lg:rounded-br-[28px]  lg:rounded-tr-[28px] grid">
             {/* top header */}
             <div className="flex justify-between">
-                <div className="logo text-3xl font-semibold text-violet-500">E-tech</div>
-                <Link to="/" className="btn bg-white border border-gray-600">Sign In</Link>
+                <h3 className="logo text-3xl font-semibold text-violet-500">E-tech</h3>
+                <Link to="/" className="border border-gray-600 px-3 py-2 btn bg-white">Sign In</Link>
             </div>
             <div className="p-2 md:p-4 lg:p-8">
             <Form/>
@@ -31,4 +31,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default Forgot;
