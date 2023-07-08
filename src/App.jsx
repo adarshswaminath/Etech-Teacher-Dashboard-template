@@ -31,11 +31,11 @@ function Panel() {
         <div className="drawer-content">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/schedule" element={<Schedule />} />
-            <Route path="/message" element={<Message />} />
-            <Route path="/course" element={<Course />} />
-            <Route path="/panel/account" element={<Account />} />
+            <Route exact path="/" element={<Dashboard />} />
+            <Route exact path="/panel/schedule" element={<Schedule />} />
+            <Route exact path="/panel/message" element={<Message />} />
+            <Route exact path="/panel/course" element={<Course />} />
+            <Route exact path="panel/account" element={<Account />} />
           </Routes>
         </div>
         <div className="drawer-side">
