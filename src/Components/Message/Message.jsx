@@ -2,7 +2,9 @@ import React from 'react'
 
 function Message() {
   return (
-    <div>Message</div>
+    <div className='flex h-screen items-center justify-center'>
+      <h2 className="text-4xl">Message</h2>
+    </div>
   )
 }
 
