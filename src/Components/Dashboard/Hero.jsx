@@ -18,7 +18,7 @@ function Hero() {
   return (
     <div className="grid lg:flex md:flex gap-4 mt-[-4px]">
       {/* First Box */}
-      <div className="w-full lg:w-3/4 h-96 p-4 bg-white rounded-lg">
+      <div className="w-full lg:w-3/4  p-4 bg-white rounded-lg">
         <div className="title flex justify-between items-center">
           <h3 className="text-violet-600 text-xl font-semibold">Revenue</h3>
           <div className="flex items-center bg-gray-200 rounded-full h-6 w-20 font-semibold">
@@ -26,10 +26,8 @@ function Hero() {
             <span className="text-green-500">0.3%</span>
           </div>
         </div>
+        <Graph/>
         {/* Graph */}
-        {/* <div className="mt-4">
-          <Graph />
-        </div> */}
         {/* Countries */}
         <div className="flex justify-between mt-3">
           <div className="flex gap-2">
@@ -47,7 +45,7 @@ function Hero() {
       </div>
 
       {/* Second Box */}
-      <div className="w-full lg:w-1/4 h-96 p-8 bg-white rounded-lg">
+      <div className="w-full lg:w-1/4 h-96 p-8 bg-white rounded-lg mt-4 lg:mt-0">
         <h2 className="text-xl font-semibold text-violet-600">
           Top Student Locations
         </h2>
