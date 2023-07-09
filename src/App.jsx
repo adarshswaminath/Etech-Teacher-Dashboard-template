@@ -8,6 +8,7 @@ import SchedulerRoute from "./Routes/ScheduleRoute";
 import AccountsRoute from "./Routes/AccountsRoute";
 import MessageRoute from "./Routes/MessageRoute";
 import CourseRoute from "./Routes/CourseRoute";
+import StatusRoute from "./Routes/StatusRoute";
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/schedule" element={<SchedulerRoute/>}></Route>
         <Route path="/account" element={<AccountsRoute/>}></Route>
         <Route path="/message" element={<MessageRoute/>}></Route>
+        <Route path="/status" element={<StatusRoute/>}></Route>
         <Route path="/course" element={<CourseRoute/>}></Route>
       </Routes>
     </Router>

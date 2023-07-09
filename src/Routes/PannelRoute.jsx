@@ -1,7 +1,7 @@
 import React from 'react'
 import { BiHomeAlt, BiMessage } from "react-icons/bi";
 import { IoCalendarOutline } from "react-icons/io5";
-import { AiOutlinePlayCircle } from "react-icons/ai";
+import { AiOutlinePlayCircle,AiTwotoneStar } from "react-icons/ai";
 import { BsGraphUp } from "react-icons/bs";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from "../Components/Dashboard/Dashboard";
@@ -47,6 +47,13 @@ function PanelRoute() {
                 <Link to="/message" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                   <BiMessage />
                   Message
+                </Link>
+              </li>
+              <li>
+              
+                <Link to="/status" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+                  <AiTwotoneStar />
+                  My Status
                 </Link>
               </li>
               <li>

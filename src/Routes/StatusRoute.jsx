@@ -9,10 +9,14 @@ import Schedule from "../Components/Schedule/Schedule";
 import Message from "../Components/Message/Message";
 import Course from "../Components/Course/Course";
 import Account from "../Components/Account/Account";
+import Signin from "../Components/Signin/Signin";
+import Signup from "../Components/Signup/Signup"
+import Forgot from "../Components/Forgot/Forgot";
 import Navbar from '../Components/Navbar';
+import Status from '../Components/Status/Status';
 
 
-function CourseRoute() {
+function StatusRoute() {
     return (
       <div className="bg-gray-200">
         <div className="drawer">
@@ -20,7 +24,7 @@ function CourseRoute() {
           <div className="drawer-content">
             <Navbar/>
             <Routes>
-              <Route exact path="/" element={<Course />} />
+              <Route exact path="/" element={<Status/>} />
             </Routes>
           </div>
           <div className="drawer-side">
@@ -45,12 +49,10 @@ function CourseRoute() {
                   Message
                 </Link>
               </li>
-              <li>
               <Link to="/status" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                   <AiTwotoneStar />
                   My Status
                 </Link>
-              </li>
               <li>
                 <Link to="/course" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                   <AiOutlinePlayCircle />
@@ -71,4 +73,4 @@ function CourseRoute() {
   }
   
 
-export default CourseRoute
+export default StatusRoute

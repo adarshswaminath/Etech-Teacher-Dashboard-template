@@ -5,7 +5,7 @@ const image = "https://s3.amazonaws.com/one_org_international/international/medi
 
 const Design = () => {
   return(
-    <div className="h-58 w-full bg-white rounded-lg">
+    <div className="p-2 w-full bg-white rounded-lg">
       <div className="flex flex-row gap-2">
         <div><img src={image} className='h-52 w-52' alt="" /></div>
         <div>
