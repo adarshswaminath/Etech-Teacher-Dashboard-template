@@ -1,35 +1,32 @@
-import React from 'react';
-import { Bar } from 'react-chartjs-2';
+import React from "react";
+import Chart from "react-apexcharts";
 
-function Graph() {
-  const data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-    datasets: [
-      {
-        label: 'Sales',
-        backgroundColor: 'rgba(75,192,192,0.2)',
-        borderColor: 'rgba(75,192,192,1)',
-        borderWidth: 1,
-        hoverBackgroundColor: 'rgba(75,192,192,0.4)',
-        hoverBorderColor: 'rgba(75,192,192,1)',
-        data: [65, 59, 80, 81, 56, 55]
-      }
-    ]
-  };
-
+const Graph = () => {
   const options = {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
+    chart: {
+      id: "basic-bar",
+    },
+    xaxis: {
+      categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
+    },
   };
+
+  const series = [
+    {
+      name: "series-1",
+      data: [30, 40, 45, 50, 49, 60, 70, 91],
+    },
+  ];
 
   return (
-    <div className="bg-white rounded-lg p-4 shadow">
-      <Bar data={data} options={options} />
+    <div className="app">
+      <div className="row w-full">
+        <div className="mixed-chart">
+          <Chart options={options} series={series} type="line" width="500" />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default Graph
+export default Graph;
