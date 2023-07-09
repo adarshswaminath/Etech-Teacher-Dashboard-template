@@ -4,7 +4,7 @@ import {BsGraphUpArrow} from "react-icons/bs"
 const img1 = "https://www.clairewoodphotography.co.uk/wp-content/uploads/2019/10/commercial-corporate-group-manchester-leeds-photographer-photographer-Turner-Townsend-1.jpg"
 const img2 = "https://s-i.huffpost.com/gen/1260370/images/o-GIRLS-IN-TECH-facebook.jpg"
 
-const Template = ({image,title,caption}) => {
+export const Template = ({image,title,caption}) => {
     return(
         <div className='mt-3 p-1'>
             <div className="flex justify-between">

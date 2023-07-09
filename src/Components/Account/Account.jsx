@@ -13,7 +13,7 @@ function Account() {
     <div className="p-2 md:p-4 lg:p-6 xl:p-8">
       <div className="grid lg:flex items-center justify-between mb-3">
         <div className="grid">
-          <h3 className="text-2xl font-semibold text-violet-500">My Account</h3>
+          <h3 className="text-2xl font-semibold text-violet-500">My Account 👋</h3>
           <h4 className="text-sm text-gray-600">Education Teacher Dashboard</h4>
         </div>
         <Search bgcolor="white"/>

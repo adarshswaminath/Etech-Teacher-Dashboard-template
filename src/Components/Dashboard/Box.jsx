@@ -23,7 +23,7 @@ const Sales = ({color}) => {
     )
 }
 
-const Query = ({color,title,caption}) => {
+export const Query = ({color,title,caption}) => {
     return(
         <div className="flex justify-between">
             <div>

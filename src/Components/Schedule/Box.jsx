@@ -10,7 +10,7 @@ function Box() {
   return (
     <div>
       {/* 4 buttons */}
-      <div className="text-center grid gap-2 grid-cols-2 lg:grid-cols-4">
+      <div className="cursor-pointer text-center grid gap-2 grid-cols-2 lg:grid-cols-4 mb-3">
         <div
           className={`px-2 py-4 rounded-lg ${
             selectedButton === 'All' ? 'bg-[#eb6270] text-white' : 'bg-gray-200'
