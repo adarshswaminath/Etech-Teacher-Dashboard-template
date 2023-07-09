@@ -13,7 +13,7 @@ function Schedule() {
           <div className='w-full lg:w-2/3'>
             <div className="grid lg:flex justify-between">
               <div className="grid  mb-2">
-                <h3 className='text-3xl text-violet-600 font-semibold'>My Schedule 👋</h3>
+                <h3 className='text-2xl text-violet-600 font-semibold'>My Schedule 👋</h3>
                 <p className='text-gray-500'>Education Teacher Dashboard</p>
               </div>
               <Search/>
