@@ -4,25 +4,24 @@ import {MdOutlineMonitorHeart} from "react-icons/md"
 import {AiOutlinePieChart,AiOutlineMonitor,AiOutlineFilePdf} from "react-icons/ai"
 
 const NotificationList = ({Color}) => {
-    const color = ['green','red','indigo','blue']
-    return(
-      <div>
-        <div className="mt-3 flex justify-between items-center">
-            <div className="flex gap-3">
-              <div className={`bg-${Color}-200 text-${Color}-400 p-3 rounded-lg text-xl font-semibold`}><AiOutlineFilePdf/></div>
-              <div className="grid">
-                <div className="text-violet-500 font-medium">Refferences.zip</div>
-                <div className="text-gray-500">19 May 2023 at 11:53</div>
-              </div>
-            </div>
-            <div className=" text-gray-500">
-              1.8 MB
+  const color = ['green','red','indigo','blue']
+  return(
+    <div>
+      <div className="mt-3 flex justify-between items-center">
+          <div className="flex gap-3">
+            <div className={`bg-${Color}-200 text-${Color}-400 p-3 rounded-lg text-xl font-semibold`}><AiOutlineFilePdf/></div>
+            <div className="grid">
+              <div className="text-violet-500 font-medium">Refferences.zip</div>
+              <div className="text-gray-500">19 May 2023 at 11:53</div>
             </div>
           </div>
-      </div>
-    )
-  }
-
+          <div className=" text-gray-500">
+            1.8 MB
+          </div>
+        </div>
+    </div>
+  )
+}
 
 function RightPannelOfLesson() {
   return (
