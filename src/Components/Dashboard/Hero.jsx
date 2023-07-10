@@ -21,7 +21,7 @@ function Hero() {
       <div className="w-full lg:w-3/4  p-4 bg-white rounded-lg">
         <div className="title flex justify-between items-center">
           <h3 className="text-violet-600 text-xl font-semibold">Revenue</h3>
-          <div className="flex items-center bg-gray-200 rounded-full h-6 w-20 font-semibold">
+          <div className="flex items-center bg-gray-200 rounded-full h-6 w-20 p-2 font-semibold">
             <BsGraphUpArrow className="text-green-500 mr-1" />
             <span className="text-green-500">0.3%</span>
           </div>

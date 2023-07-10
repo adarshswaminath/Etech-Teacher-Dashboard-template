@@ -49,10 +49,12 @@ function StatusRoute() {
                   Message
                 </Link>
               </li>
+              <li>
               <Link to="/status" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                   <AiTwotoneStar />
                   My Status
                 </Link>
+              </li>
               <li>
                 <Link to="/course" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                   <AiOutlinePlayCircle />
