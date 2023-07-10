@@ -22,6 +22,7 @@ const Label = ({icon,color,title,caption}) => {
 
 
 function Profile() {
+    const color = ["green",'red','blue','violet']
   return (
     <div className='p-4'>
         <div className="bg-white rounded-lg p-2">
