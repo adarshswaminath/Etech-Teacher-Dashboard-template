@@ -7,7 +7,7 @@ import PanelRoute from "./Routes/PannelRoute";
 import SchedulerRoute from "./Routes/ScheduleRoute";
 import AccountsRoute from "./Routes/AccountsRoute";
 import MessageRoute from "./Routes/MessageRoute";
-import CourseRoute from "./Routes/CourseRoute";
+import LessonRoute from "./Routes/LessonRoute";
 import StatusRoute from "./Routes/StatusRoute";
 
 
@@ -24,7 +24,7 @@ function App() {
         <Route path="/account" element={<AccountsRoute/>}></Route>
         <Route path="/message" element={<MessageRoute/>}></Route>
         <Route path="/status" element={<StatusRoute/>}></Route>
-        <Route path="/course" element={<CourseRoute/>}></Route>
+        <Route path="/Lesson" element={<LessonRoute/>}></Route>
       </Routes>
     </Router>
   );

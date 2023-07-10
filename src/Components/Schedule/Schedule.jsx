@@ -18,14 +18,14 @@ function Schedule() {
               </div>
               <Search/>
             </div>
-            {/* trend course */}
+            {/* trend Lesson */}
             <div className="flex justify-between items-center mt-3 mb-3">
               <div className='flex items-center gap-4'>
                 <div className='border-4 hover:border-b-[#ecb8c2] duration-300'>
-                  <h3 className='text-xl font-semibold text-violet-600'>Top Trend Course</h3>
+                  <h3 className='text-xl font-semibold text-violet-600'>Top Trend Lesson</h3>
                 </div>
                 <div className='border-4 hover:border-b-[#ecb8c2]'>
-                  <h3 className='hidden lg:flex text-violet-600 font-semibold'>New Course</h3>
+                  <h3 className='hidden lg:flex text-violet-600 font-semibold'>New Lesson</h3>
                 </div>
               </div>
               <div className='flex'>

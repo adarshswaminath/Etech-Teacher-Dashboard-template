@@ -49,9 +49,9 @@ function MessageRoute() {
                 </Link>
               </li>
               <li>
-                <Link to="/course" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+                <Link to="/Lesson" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                   <AiOutlinePlayCircle />
-                  My Course
+                  My Lesson
                 </Link>
               </li>
               <li>

@@ -7,12 +7,12 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from "../Components/Dashboard/Dashboard";
 import Schedule from "../Components/Schedule/Schedule";
 import Message from "../Components/Message/Message";
-import Course from "../Components/Course/Course";
+import Lesson from "../Components/Lesson/Lesson";
 import Account from "../Components/Account/Account";
 import Navbar from '../Components/Navbar';
 
 
-function CourseRoute() {
+function LessonRoute() {
     return (
       <div className="bg-gray-200">
         <div className="drawer">
@@ -20,7 +20,7 @@ function CourseRoute() {
           <div className="drawer-content">
             <Navbar/>
             <Routes>
-              <Route exact path="/" element={<Course />} />
+              <Route exact path="/" element={<Lesson />} />
             </Routes>
           </div>
           <div className="drawer-side">
@@ -52,9 +52,9 @@ function CourseRoute() {
                 </Link>
               </li>
               <li>
-                <Link to="/course" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+                <Link to="/Lesson" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                   <AiOutlinePlayCircle />
-                  My Course
+                  My Lesson
                 </Link>
               </li>
               <li>
@@ -71,4 +71,4 @@ function CourseRoute() {
   }
   
 
-export default CourseRoute
+export default LessonRoute

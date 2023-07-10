@@ -33,11 +33,11 @@ function Hero() {
           <div className="flex gap-2">
             <div className="flex items-center">
               <div className="h-4 w-4 rounded-full bg-red-500"></div>
-              <span className="ml-1">Course Visit</span>
+              <span className="ml-1">Lesson Visit</span>
             </div>
             <div className="flex items-center">
               <div className="h-4 w-4 rounded-full bg-violet-500"></div>
-              <span className="ml-1">Course Sale</span>
+              <span className="ml-1">Lesson Sale</span>
             </div>
           </div>
           <BsPieChartFill className="text-xl text-violet-600" />

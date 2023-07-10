@@ -32,7 +32,7 @@ function Performance() {
             <Template image={img1} title="Learn Adobe XD Part 01" caption="UI/UX Design"/>
             <Template image={img1} title="Learn Adobe XD Part 02" caption="UI/UX Design"/>
             <Template image={img2} title="Learn Enterpreneurship" caption="Enterpreneurship"/>
-            <Template image={img2} title="Financial Analyst Course" caption="Bussiness"/>
+            <Template image={img2} title="Financial Analyst Lesson" caption="Bussiness"/>
            
         </div>
     </div>

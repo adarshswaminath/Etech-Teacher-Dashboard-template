@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from "../Components/Dashboard/Dashboard";
 import Schedule from "../Components/Schedule/Schedule";
 import Message from "../Components/Message/Message";
-import Course from "../Components/Course/Course";
+import Lesson from "../Components/Lesson/Lesson";
 import Account from "../Components/Account/Account";
 import Navbar from '../Components/Navbar';
 
@@ -23,7 +23,7 @@ function PanelRoute() {
               <Route exact path="/" element={<Dashboard />} />
               <Route exact path="/schedule" element={<Schedule />} />
               <Route exact path="/message" element={<Message />} />
-              <Route exact path="/course" element={<Course />} />
+              <Route exact path="/Lesson" element={<Lesson />} />
               <Route exact path="/account" element={<Account />} />
             </Routes>
           </div>
@@ -57,9 +57,9 @@ function PanelRoute() {
                 </Link>
               </li>
               <li>
-                <Link to="/course" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+                <Link to="/Lesson" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                   <AiOutlinePlayCircle />
-                  My Course
+                  My Lesson
                 </Link>
               </li>
               <li>

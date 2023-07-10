@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from "../Components/Dashboard/Dashboard";
 import Schedule from "../Components/Schedule/Schedule";
 import Message from "../Components/Message/Message";
-import Course from "../Components/Course/Course";
+import Lesson from "../Components/Lesson/Lesson";
 import Account from "../Components/Account/Account";
 import Signin from "../Components/Signin/Signin";
 import Signup from "../Components/Signup/Signup"
@@ -55,9 +55,9 @@ function SchedulerRoute() {
                 </Link>
               </li>
               <li>
-                <Link to="/course" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
+                <Link to="/Lesson" className="mt-6 text-xl flex hover:bg-violet-600 hover:text-white">
                   <AiOutlinePlayCircle />
-                  My Course
+                  My Lesson
                 </Link>
               </li>
               <li>

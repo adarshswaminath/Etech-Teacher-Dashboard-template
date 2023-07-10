@@ -42,8 +42,8 @@ function Profile() {
             <Label icon={<AiOutlineUser/>} color="green" title="Profile" caption="Account Setting Profile"/>
             <Label icon={<BiSolidMessageDetail/>} color="violet" title="My Message" caption="Inbox and draft"/>
             <Label icon={<BsActivity/>} color="red" title="My Activity" caption="Logs and Notification"/>
-            <Label icon={<BsFillBookFill/>} color="blue" title="My Course" caption="90 Courses"/>
-            <Label icon={<BsFillBookFill/>} color="blue" title="Payment Method" caption="Latest Courses"/>
+            <Label icon={<BsFillBookFill/>} color="blue" title="My Lesson" caption="90 Lessons"/>
+            <Label icon={<BsFillBookFill/>} color="blue" title="Payment Method" caption="Latest Lessons"/>
             
 
 
