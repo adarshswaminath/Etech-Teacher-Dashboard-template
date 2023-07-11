@@ -42,9 +42,11 @@ function Form() {
         </Link>
       </div>
 
-      <div onClick={Auth} className='bg-violet-500 mt-3 text-white py-3 rounded-lg hover:bg-violet-400 font-semibold'>
+      <Link to="/panel">
+      <div className='bg-violet-500 mt-3 text-white py-3 rounded-lg hover:bg-violet-400 font-semibold'>
         Sign In
       </div>
+      </Link>
 
       <div className='divider my-3'>OR</div>
 
